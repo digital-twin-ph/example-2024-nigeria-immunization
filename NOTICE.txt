@@ -1,0 +1,21 @@
+DTP coverage and zero-dose children in Nigeria
+==============================================
+
+Data:     Utazi CE, Megheib M, Olowe ID, Chaudhuri S, Tejedor-Garavito N,
+          Tatem AJ. Modelled vaccination coverage and zero-dose estimates
+          for Nigeria, 2000-2024, version 1.0. WorldPop, University of
+          Southampton. doi:10.5258/SOTON/WP00880
+
+Terms:    WorldPop states that its datasets are available under the Creative
+          Commons Attribution 4.0 International License.
+          https://creativecommons.org/licenses/by/4.0/
+
+Changes:  Three years were selected, two archives were joined, some columns
+          were left out and boundary coordinates were rounded to 6 decimal
+          places. See README.md. Values kept are unchanged.
+
+          The source's boundaries were not reviewed separately. Their licence
+          is taken from the WorldPop release that carries them.
+
+These data are model-based estimates. Neither WorldPop nor its funders are
+associated with this example, and they have not endorsed it.

@@ -1,0 +1,39 @@
+{
+  "schema": "fieldwork/example-provenance/1",
+  "retrieved": "2026-11-02",
+  "title": "Modelled DTP and MCV coverage and zero-dose estimates for Nigeria's LGAs",
+  "source": "https://hub.worldpop.org/doi/10.5258/SOTON/WP00880",
+  "doi": "10.5258/SOTON/WP00880",
+  "publisher": "WorldPop, University of Southampton",
+  "archives": [
+    {
+      "file": "NGA_ADM_coverage_estimates.zip",
+      "url": "https://data.worldpop.org/repo/prj/gavi/DTP1_3_MCV1_zero_dose/NGA/v1/NGA_ADM_coverage_estimates.zip",
+      "bytes": 37095858,
+      "sha256": "8a53790c7d9c763dc1ec1fe1fa3a04048b080a4514a7d352d6b7d38eeefc79cc"
+    },
+    {
+      "file": "NGA_ADM_zero_dose_estimates.zip",
+      "url": "https://data.worldpop.org/repo/prj/gavi/DTP1_3_MCV1_zero_dose/NGA/v1/NGA_ADM_zero_dose_estimates.zip",
+      "bytes": 9536948,
+      "sha256": "8dc25c054e79ca0ddfbf6b360bd4b86bfb0b6f8d8ec7e8f85458e1864464e689"
+    }
+  ],
+  "licence": {
+    "stated": "CC-BY-4.0",
+    "note": "Stated on the WorldPop dataset page. Boundaries were not reviewed separately."
+  },
+  "derivation": "ADM2_estimates_all_indicators.gpkg and ADM2_zero_dose_estimates.gpkg joined on ID and Year; years 2018, 2021 and 2024 kept; mean, low and up kept; geometry taken once from 2024 and rounded to 6 decimal places.",
+  "verification": {
+    "keysAgree": "19,350 (ID, Year) keys in both archives",
+    "intervalOrder": "low <= mean <= up in every row for all three antigens",
+    "nationalTotals": "LGA zd_est sums within 0.11% of ADM0 in 2018, 2021 and 2024",
+    "ruleCount": "127 LGAs meet the illustrative rule, in the file and on the map"
+  },
+  "limits": [
+    "Modelled estimates, not observations.",
+    "Geospatial covariates were used; which ones was not read.",
+    "Coverage intervals are not on the maps.",
+    "No study design is declared."
+  ]
+}
