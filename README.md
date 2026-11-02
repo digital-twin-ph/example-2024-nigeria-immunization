@@ -50,7 +50,8 @@ list for data review.
 ## What this does not establish
 
 - **Uncertainty is not on these maps.** Each coverage estimate has an interval, and for 22 of the 127 LGAs on the priority map that interval crosses 0.7. Read `low_dtp1` and `up_dtp1` before reading anything into one LGA.
-- **The model used geospatial covariates.** Which ones was not checked. If they include travel time or remoteness, a link between low coverage and remoteness could partly reflect the model's inputs. These maps are for raising questions.
+- **The model used covariates, and distance to urban areas is one.** It is significant and negative for DTP1, so a link between low coverage and remoteness can partly reflect the model's inputs. Travel time to a facility is not a covariate. The others include wealth, maternal education, skilled birth attendance and climate. Read from the authors' [DTP1 code](https://github.com/EdsonUtazi/NGA_paper_space_time_analysis) and [preprint](https://www.medrxiv.org/content/10.64898/2026.01.19.26344414v1.full), which is not peer reviewed.
+- **Values are by birth cohort, not calendar year,** and the model smooths strongly over time. A campaign in one year should not be read as a step in that year.
 - **No causes.** Nothing here says why coverage is low in any place. These are ecological summaries.
 - **No persistence, facilities, access or measles.** The plan lists them. They are not built.
 - **The boundaries are the source's, and may not match the official LGA boundaries** of any given year.
