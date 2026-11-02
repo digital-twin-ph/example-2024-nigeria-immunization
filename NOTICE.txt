@@ -10,7 +10,7 @@ Terms:    WorldPop states that its datasets are available under the Creative
           Commons Attribution 4.0 International License.
           https://creativecommons.org/licenses/by/4.0/
 
-Changes:  Three years were selected, two archives were joined, some columns
+Changes:  The years 2005 to 2024 were selected, two archives were joined, some columns
           were left out and boundary coordinates were rounded to 6 decimal
           places. See README.md. Values kept are unchanged.
 

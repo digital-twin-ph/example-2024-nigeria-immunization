@@ -23,7 +23,7 @@
     "stated": "CC-BY-4.0",
     "note": "Stated on the WorldPop dataset page. Boundaries were not reviewed separately."
   },
-  "derivation": "ADM2_estimates_all_indicators.gpkg and ADM2_zero_dose_estimates.gpkg joined on ID and Year; years 2018, 2021 and 2024 kept; mean, low and up kept; geometry taken once from 2024 and rounded to 6 decimal places.",
+  "derivation": "ADM2_estimates_all_indicators.gpkg and ADM2_zero_dose_estimates.gpkg joined on ID and Year; years 2005 to 2024 kept for mean DTP1 and zd_est; mean, low and up for all antigens kept for 2024; geometry taken once from 2024 and rounded to 6 decimal places.",
   "verification": {
     "keysAgree": "19,350 (ID, Year) keys in both archives",
     "intervalOrder": "low <= mean <= up in every row for all three antigens",
