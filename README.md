@@ -12,7 +12,7 @@ exploring questions, and do not grade any LGA or programme.
 | --- | --- | --- |
 | Where is DTP1 coverage lowest? | 4 | Modelled DTP1 coverage, 2024 |
 | Where are the most zero-dose children? | 4 | Estimated children with no DTP1, 2024 |
-| What changed from 2005 to 2024? | 6 | Change in coverage over 20 years, in proportion points |
+| What changed from 2005 to 2024? | 8 | Change in coverage over 20 years, in proportion points; and every year played on an interactive map |
 | Which LGAs have low coverage and a high burden? | 7 | A rule over both values |
 | Where is coverage lowest, on the ground? | 4 | DTP1 coverage on an interactive map, over OpenStreetMap tiles |
 
@@ -48,6 +48,13 @@ list for data review.
 - **In the source's LGA zero-dose file, the column called `State` holds the LGA name.**
 - **`zd_est` has no uncertainty at LGA level, and no population.**
 - **LGA zero-dose counts sum to within 0.11% of the national figure** in 2018, 2021 and 2024. The difference is not explained here.
+
+## Playing through the years
+
+The third workflow also joins the 20 years as frames and plays them on an interactive map: a slider, Play and a step
+each way. Every year shares one key, so a darker LGA really is higher coverage than in an earlier year. The caption
+reads "Birth cohort", because the values are by birth cohort; each frame keeps the data's name, `dtp1_2005` to
+`dtp1_2024`.
 
 ## The basemap
 
