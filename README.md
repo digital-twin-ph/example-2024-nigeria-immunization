@@ -31,7 +31,7 @@ list for data review.
 | `data/nga-lga-dtp1-by-year.csv` | Mean DTP1 for each year from 2005 to 2024 |
 | `data/nga-lga-zero-dose-by-year.csv` | `zd_est` for each year from 2005 to 2024, not yet used by a workflow |
 | `geo/nga-lgas.geojson` | The 774 boundaries, with `ID`, `shapeName` and `shapeID` |
-| `notes/report-notes.json` | The authored notes and references of the illustrative report |
+| `notes/report-notes.json` | The authored notes of the illustrative report, and the works each one cites |
 | `fieldwork-project.json.gz` | The Fieldwork project |
 | `FRAMEWORK_Nigeria_Immunization_Worked_Example.md` | The original plan, kept as written. Its field names were guesses |
 
@@ -74,7 +74,7 @@ choose **Run the rest** to assemble it.
 
 - **Authored notes** are in `notes/report-notes.json`, and are entered through the note dialog.
 - **Machined notes** are written by the widgets on each run.
-- **References** are authored notes, because these works are not inputs to a widget.
+- **References** are assembled from the works the notes cite, each entered in the note's Citations tab.
 
 It is an illustration, not a programme assessment.
 

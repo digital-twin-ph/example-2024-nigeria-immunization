@@ -1,6 +1,6 @@
 {
   "schema": "fieldwork/example-notes/1",
-  "note": "Authored notes for an illustrative 20-year report. Entered through the note dialog, one at a time, so the report can be rebuilt by hand.",
+  "note": "Authored notes for an illustrative 20-year report. Each is entered through the note dialog, and each work it cites through the dialog's Citations tab, so References is assembled and the report can be rebuilt by hand.",
   "notes": [
     {
       "section": "Introduction",
@@ -15,22 +15,38 @@
     {
       "section": "Methods",
       "fn": "source",
-      "text": "All coverage and zero-dose values are WorldPop's modelled estimates (Utazi et al., 2026a), which draw on seven surveys from 2003 to 2024 (Utazi et al., 2026b, Supplementary Table 1). They are not administrative counts or vaccination records. The years 2005 to 2024 were kept, and the values kept are unchanged."
+      "text": "All coverage and zero-dose values are WorldPop's modelled estimates, which draw on seven surveys from 2003 to 2024. The model is described in a preprint that has not been peer reviewed. They are not administrative counts or vaccination records. The years 2005 to 2024 were kept, and the values kept are unchanged.",
+      "cites": [
+        "utazi-2026-data",
+        "utazi-2026-preprint"
+      ]
     },
     {
       "section": "Methods",
       "fn": "method",
-      "text": "Values relate to birth cohorts, not calendar years (Utazi et al., 2026b). The year 2024 in this report means children born in 2024, and the modelled series is strongly smoothed over time. Changes are read across the period, not as steps in a given year."
+      "text": "Values relate to birth cohorts, not calendar years. The year 2024 in this report means children born in 2024, and the modelled series is strongly smoothed over time. Changes are read across the period, not as steps in a given year.",
+      "cites": [
+        "utazi-2026-preprint"
+      ]
     },
     {
       "section": "Methods",
       "fn": "method",
-      "text": "Vaccination status in the surveys comes from a card or the caregiver's report, for vaccines received at any time before the survey (Croft et al., 2023). The 2018 survey prompts for vaccinations received in campaigns (NPC and ICF, 2019, questionnaire item 510A). Campaign doses can therefore enter what the surveys record, particularly for MCV1 (Utazi et al., 2022)."
+      "text": "Vaccination status in the surveys comes from a card or the caregiver's report, for vaccines received at any time before the survey. The 2018 survey's questionnaire, item 510A, prompts for vaccinations received in campaigns. Campaign doses can therefore enter what the surveys record, particularly for MCV1.",
+      "cites": [
+        "dhs-guide",
+        "ndhs-2018",
+        "utazi-2022"
+      ]
     },
     {
       "section": "Methods",
       "fn": "method",
-      "text": "Measles campaigns are used here only as context. They are not inputs to the model. Dates come from WHO's records, and the birth cohorts each campaign is likely to have reached come from Supplementary Table 2 of Utazi et al. (2026b), whose authors describe that mapping as approximate. No campaign is placed on a map as a step in coverage."
+      "text": "Measles campaigns are used here only as context. They are not inputs to the model. Dates come from WHO's records, and the birth cohorts each campaign is likely to have reached come from Supplementary Table 2 of the model's preprint, whose authors describe that mapping as approximate. No campaign is placed on a map as a step in coverage.",
+      "cites": [
+        "who-sia",
+        "utazi-2026-preprint"
+      ]
     },
     {
       "section": "Methods",
@@ -60,52 +76,269 @@
     {
       "section": "Discussion",
       "fn": "limitation",
-      "text": "Nothing here says why coverage changed. These are ecological summaries of modelled values. The model's covariates include distance to urban areas, which is significant and negative for DTP1 (Utazi et al., 2026b), so a link between low coverage and remoteness can partly reflect the model's inputs."
+      "text": "Nothing here says why coverage changed. These are ecological summaries of modelled values. The model's covariates include distance to urban areas, which is significant and negative for DTP1, so a link between low coverage and remoteness can partly reflect the model's inputs.",
+      "cites": [
+        "utazi-2026-preprint"
+      ]
     },
     {
       "section": "Discussion",
       "fn": "limitation",
-      "text": "Campaign effects cannot be read from this report. Utazi et al. (2022) estimated before-and-after zero-dose numbers by district for the 2019 campaign, but those data are not shared, and no open source was found that gives campaign coverage by LGA. State is the finest level at which open campaign evidence was found."
+      "text": "Campaign effects cannot be read from this report. A 2022 study estimated before-and-after zero-dose numbers by district for the 2019 campaign, but those data are not shared, and no open source was found that gives campaign coverage by LGA. State is the finest level at which open campaign evidence was found.",
+      "cites": [
+        "utazi-2022"
+      ]
     },
     {
       "section": "Discussion",
       "fn": "limitation",
-      "text": "Campaign records have limits of their own. Sources disagree on dates: the 2019 campaign is 31 October to 30 November in WHO's records and September to December in Utazi et al. (2022). Reported administrative coverage can exceed 100%, and across the WHO African Region only 29% of campaigns were followed by a coverage survey (Masresha et al., 2026)."
-    },
-    {
-      "section": "References",
-      "fn": "source",
-      "text": "Utazi CE, Megheib M, Olowe ID, Chaudhuri S, Tejedor-Garavito N, Tatem AJ. Modelled vaccination coverage and zero-dose estimates for Nigeria, 2000-2024, version 1.0. WorldPop, University of Southampton; 2026. doi:10.5258/SOTON/WP00880. [Utazi et al., 2026a]"
-    },
-    {
-      "section": "References",
-      "fn": "source",
-      "text": "Utazi CE, Megheib M, Olowe ID, Chaudhuri S, Tejedor-Garavito N, Mwinnyaa G, Kawakatsu Y, Boyda D, Lorin J, Tatem AJ. Mapping DTP1,3 and MCV1 coverage and zero-dose prevalence in Nigeria: a spatiotemporal analysis (2000-2024). medRxiv preprint, not peer reviewed; 2026, with supplementary information. doi:10.64898/2026.01.19.26344414. [Utazi et al., 2026b]"
-    },
-    {
-      "section": "References",
-      "fn": "source",
-      "text": "Utazi CE, Aheto JMK, Wigley A, Tejedor-Garavito N, Bonnie A, Nnanatu CC, Wagai J, Williams C, Setayesh H, Tatem AJ, Cutts FT. Mapping the distribution of zero-dose children to assess the performance of vaccine delivery strategies and their relationships with measles incidence in Nigeria. Vaccine. 2022, corrected proof. doi:10.1016/j.vaccine.2022.11.026. [Utazi et al., 2022]"
-    },
-    {
-      "section": "References",
-      "fn": "source",
-      "text": "Masresha BG, Weldegebriel GG, Lebo EJ, Wanyoike S, Bwaka AM, Vuo-Masembe Y. Insights from 25 years of measles and measles-rubella vaccination campaigns in the WHO African Region (2001-2025). Vaccines. 2026;14(6):549. doi:10.3390/vaccines14060549. [Masresha et al., 2026]"
-    },
-    {
-      "section": "References",
-      "fn": "source",
-      "text": "National Population Commission (NPC) [Nigeria] and ICF. Nigeria Demographic and Health Survey 2018. Abuja, Nigeria, and Rockville, Maryland, USA: NPC and ICF; 2019. [NPC and ICF, 2019]"
-    },
-    {
-      "section": "References",
-      "fn": "method",
-      "text": "Croft TN, Allen CK, Zachary BW, et al. Guide to DHS Statistics. Rockville, Maryland, USA: ICF; 2023. [Croft et al., 2023]"
-    },
-    {
-      "section": "References",
-      "fn": "source",
-      "text": "World Health Organization. Measles and rubella supplementary immunization activities, Nigeria (V_SIA_MAIN_MR). Immunization Data portal; accessed 2 November 2026. Figures reported by Nigeria. https://immunizationdata.who.int/. These records are cited and are not held in this repository."
+      "text": "Campaign records have limits of their own. Sources disagree on dates: the 2019 campaign is 31 October to 30 November in WHO's records and September to December in a 2022 study. Reported administrative coverage can exceed 100%, and across the WHO African Region only 29% of campaigns were followed by a coverage survey.",
+      "cites": [
+        "who-sia",
+        "utazi-2022",
+        "masresha-2026"
+      ]
     }
-  ]
+  ],
+  "works": {
+    "utazi-2026-data": {
+      "citation": {
+        "type": "dataset",
+        "authors": [
+          {
+            "family": "Utazi",
+            "given": "C.E."
+          },
+          {
+            "family": "Megheib",
+            "given": "M."
+          },
+          {
+            "family": "Olowe",
+            "given": "I.D."
+          },
+          {
+            "family": "Chaudhuri",
+            "given": "S."
+          },
+          {
+            "family": "Tejedor-Garavito",
+            "given": "N."
+          },
+          {
+            "family": "Tatem",
+            "given": "A.J."
+          }
+        ],
+        "title": "Modelled vaccination coverage and zero-dose estimates for Nigeria, 2000-2024, version 1.0",
+        "publisher": "WorldPop, University of Southampton",
+        "place": "Southampton",
+        "doi": "10.5258/SOTON/WP00880"
+      },
+      "published": "2026"
+    },
+    "utazi-2026-preprint": {
+      "citation": {
+        "type": "article",
+        "authors": [
+          {
+            "family": "Utazi",
+            "given": "C. Edson"
+          },
+          {
+            "family": "Megheib",
+            "given": "Mohamed"
+          },
+          {
+            "family": "Olowe",
+            "given": "Iyanuloluwa D."
+          },
+          {
+            "family": "Chaudhuri",
+            "given": "Somnath"
+          },
+          {
+            "family": "Tejedor-Garavito",
+            "given": "Natalia"
+          },
+          {
+            "family": "Mwinnyaa",
+            "given": "George"
+          },
+          {
+            "family": "Kawakatsu",
+            "given": "Yoshito"
+          },
+          {
+            "family": "Boyda",
+            "given": "Danielle"
+          },
+          {
+            "family": "Lorin",
+            "given": "Josh"
+          },
+          {
+            "family": "Tatem",
+            "given": "Andrew J."
+          }
+        ],
+        "title": "Mapping DTP1,3 and MCV1 coverage and zero-dose prevalence in Nigeria: a spatiotemporal analysis (2000-2024)",
+        "container": "medRxiv",
+        "doi": "10.64898/2026.01.19.26344414"
+      },
+      "published": "2026"
+    },
+    "utazi-2022": {
+      "citation": {
+        "type": "article",
+        "authors": [
+          {
+            "family": "Utazi",
+            "given": "C. Edson"
+          },
+          {
+            "family": "Aheto",
+            "given": "Justice M.K."
+          },
+          {
+            "family": "Wigley",
+            "given": "Adelle"
+          },
+          {
+            "family": "Tejedor-Garavito",
+            "given": "Natalia"
+          },
+          {
+            "family": "Bonnie",
+            "given": "Amy"
+          },
+          {
+            "family": "Nnanatu",
+            "given": "Christopher C."
+          },
+          {
+            "family": "Wagai",
+            "given": "John"
+          },
+          {
+            "family": "Williams",
+            "given": "Cheryl"
+          },
+          {
+            "family": "Setayesh",
+            "given": "Hamidreza"
+          },
+          {
+            "family": "Tatem",
+            "given": "Andrew J."
+          },
+          {
+            "family": "Cutts",
+            "given": "Felicity T."
+          }
+        ],
+        "title": "Mapping the distribution of zero-dose children to assess the performance of vaccine delivery strategies and their relationships with measles incidence in Nigeria",
+        "container": "Vaccine",
+        "doi": "10.1016/j.vaccine.2022.11.026"
+      },
+      "published": "2022"
+    },
+    "masresha-2026": {
+      "citation": {
+        "type": "article",
+        "authors": [
+          {
+            "family": "Masresha",
+            "given": "Balcha Girma"
+          },
+          {
+            "family": "Weldegebriel",
+            "given": "Goitom Gebremedhin"
+          },
+          {
+            "family": "Lebo",
+            "given": "Emmaculate Jepkorir"
+          },
+          {
+            "family": "Wanyoike",
+            "given": "Sarah"
+          },
+          {
+            "family": "Bwaka",
+            "given": "Ado Mpia"
+          },
+          {
+            "family": "Vuo-Masembe",
+            "given": "Yolande"
+          }
+        ],
+        "title": "Insights from 25 years of measles and measles-rubella vaccination campaigns in the WHO African Region (2001-2025)",
+        "container": "Vaccines",
+        "volume": "14",
+        "issue": "6",
+        "pages": "549",
+        "doi": "10.3390/vaccines14060549"
+      },
+      "published": "2026"
+    },
+    "ndhs-2018": {
+      "citation": {
+        "type": "report",
+        "authors": [
+          {
+            "family": "National Population Commission (NPC) [Nigeria]",
+            "corporate": true
+          },
+          {
+            "family": "ICF",
+            "corporate": true
+          }
+        ],
+        "title": "Nigeria Demographic and Health Survey 2018",
+        "publisher": "NPC and ICF",
+        "place": "Abuja, Nigeria, and Rockville, Maryland, USA"
+      },
+      "published": "2019"
+    },
+    "dhs-guide": {
+      "citation": {
+        "type": "book",
+        "authors": [
+          {
+            "family": "Croft",
+            "given": "Trevor N."
+          },
+          {
+            "family": "Allen",
+            "given": "Courtney K."
+          },
+          {
+            "family": "Zachary",
+            "given": "Blake W."
+          }
+        ],
+        "etAl": true,
+        "title": "Guide to DHS Statistics",
+        "publisher": "ICF",
+        "place": "Rockville, Maryland, USA"
+      },
+      "published": "2023"
+    },
+    "who-sia": {
+      "citation": {
+        "type": "dataset",
+        "authors": [
+          {
+            "family": "World Health Organization",
+            "corporate": true
+          }
+        ],
+        "title": "Measles and rubella supplementary immunization activities, Nigeria (V_SIA_MAIN_MR)",
+        "publisher": "World Health Organization"
+      },
+      "published": "2026",
+      "url": "https://immunizationdata.who.int/",
+      "retrieved": "2026-11-02"
+    }
+  }
 }
