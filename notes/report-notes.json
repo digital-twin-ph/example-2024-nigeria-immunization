@@ -1,0 +1,111 @@
+{
+  "schema": "fieldwork/example-notes/1",
+  "note": "Authored notes for an illustrative 20-year report. Entered through the note dialog, one at a time, so the report can be rebuilt by hand.",
+  "notes": [
+    {
+      "section": "Introduction",
+      "fn": "context",
+      "text": "This is an illustrative report on modelled DTP coverage and zero-dose children in Nigeria's 774 Local Government Areas (LGAs) from 2005 to 2024. It shows how Fieldwork assembles a write-up. It is not a programme assessment and does not grade any LGA or programme."
+    },
+    {
+      "section": "Introduction",
+      "fn": "rationale",
+      "text": "Three questions are asked over the 20 years: where DTP1 coverage is lowest, where the most zero-dose children are, and what changed. A fourth workflow shows how a rule can combine coverage and burden. Coverage and burden differ: a populous LGA can have good coverage and many zero-dose children, and a small one the reverse."
+    },
+    {
+      "section": "Methods",
+      "fn": "source",
+      "text": "All coverage and zero-dose values are WorldPop's modelled estimates (Utazi et al., 2026a), which draw on seven surveys from 2003 to 2024 (Utazi et al., 2026b, Supplementary Table 1). They are not administrative counts or vaccination records. The years 2005 to 2024 were kept, and the values kept are unchanged."
+    },
+    {
+      "section": "Methods",
+      "fn": "method",
+      "text": "Values relate to birth cohorts, not calendar years (Utazi et al., 2026b). The year 2024 in this report means children born in 2024, and the modelled series is strongly smoothed over time. Changes are read across the period, not as steps in a given year."
+    },
+    {
+      "section": "Methods",
+      "fn": "method",
+      "text": "Vaccination status in the surveys comes from a card or the caregiver's report, for vaccines received at any time before the survey (Croft et al., 2023). The 2018 survey prompts for vaccinations received in campaigns (NPC and ICF, 2019, questionnaire item 510A). Campaign doses can therefore enter what the surveys record, particularly for MCV1 (Utazi et al., 2022)."
+    },
+    {
+      "section": "Methods",
+      "fn": "method",
+      "text": "Measles campaigns are used here only as context. They are not inputs to the model. Dates come from WHO's records, and the birth cohorts each campaign is likely to have reached come from Supplementary Table 2 of Utazi et al. (2026b), whose authors describe that mapping as approximate. No campaign is placed on a map as a step in coverage."
+    },
+    {
+      "section": "Methods",
+      "fn": "verification",
+      "text": "Files were checked against the source: both archives agree on 19,350 pairs of LGA and year, every interval is ordered, and LGA zero-dose counts sum to within 0.11% of the national figure in 2018, 2021 and 2024. The 127 LGAs on the priority map were counted from the file as well."
+    },
+    {
+      "section": "Results",
+      "fn": "finding",
+      "text": "Across the 774 LGAs, median modelled DTP1 coverage rose from 0.632 in 2005 to 0.733 in 2024. Coverage rose in 602 LGAs and fell in 172, with changes from -0.591 to +0.599 and a median of +0.104. LGAs below 0.7 fell from 445 to 352."
+    },
+    {
+      "section": "Results",
+      "fn": "finding",
+      "text": "Summed across LGAs, estimated zero-dose children were 2,779,371 in 2005, highest at 3,124,995 in 2015, lowest at 1,957,226 in 2019, and 2,219,051 in 2024. These sums come from data/nga-lga-zero-dose-by-year.csv; no workflow in this project computes them yet. The file has no uncertainty at LGA level, so the sums carry no interval."
+    },
+    {
+      "section": "Results",
+      "fn": "finding",
+      "text": "An illustrative rule, DTP1 below 0.7 and more than 5,000 zero-dose children, marks 127 LGAs in 2024. The thresholds are arbitrary and are not programme policy. The result is a list for data review."
+    },
+    {
+      "section": "Discussion",
+      "fn": "limitation",
+      "text": "Uncertainty is not on these maps. For 22 of the 127 LGAs marked by the rule, the coverage interval crosses 0.7, so those LGAs could fall on either side of the threshold."
+    },
+    {
+      "section": "Discussion",
+      "fn": "limitation",
+      "text": "Nothing here says why coverage changed. These are ecological summaries of modelled values. The model's covariates include distance to urban areas, which is significant and negative for DTP1 (Utazi et al., 2026b), so a link between low coverage and remoteness can partly reflect the model's inputs."
+    },
+    {
+      "section": "Discussion",
+      "fn": "limitation",
+      "text": "Campaign effects cannot be read from this report. Utazi et al. (2022) estimated before-and-after zero-dose numbers by district for the 2019 campaign, but those data are not shared, and no open source was found that gives campaign coverage by LGA. State is the finest level at which open campaign evidence was found."
+    },
+    {
+      "section": "Discussion",
+      "fn": "limitation",
+      "text": "Campaign records have limits of their own. Sources disagree on dates: the 2019 campaign is 31 October to 30 November in WHO's records and September to December in Utazi et al. (2022). Reported administrative coverage can exceed 100%, and across the WHO African Region only 29% of campaigns were followed by a coverage survey (Masresha et al., 2026)."
+    },
+    {
+      "section": "References",
+      "fn": "source",
+      "text": "Utazi CE, Megheib M, Olowe ID, Chaudhuri S, Tejedor-Garavito N, Tatem AJ. Modelled vaccination coverage and zero-dose estimates for Nigeria, 2000-2024, version 1.0. WorldPop, University of Southampton; 2026. doi:10.5258/SOTON/WP00880. [Utazi et al., 2026a]"
+    },
+    {
+      "section": "References",
+      "fn": "source",
+      "text": "Utazi CE, Megheib M, Olowe ID, Chaudhuri S, Tejedor-Garavito N, Mwinnyaa G, Kawakatsu Y, Boyda D, Lorin J, Tatem AJ. Mapping DTP1,3 and MCV1 coverage and zero-dose prevalence in Nigeria: a spatiotemporal analysis (2000-2024). medRxiv preprint, not peer reviewed; 2026, with supplementary information. doi:10.64898/2026.01.19.26344414. [Utazi et al., 2026b]"
+    },
+    {
+      "section": "References",
+      "fn": "source",
+      "text": "Utazi CE, Aheto JMK, Wigley A, Tejedor-Garavito N, Bonnie A, Nnanatu CC, Wagai J, Williams C, Setayesh H, Tatem AJ, Cutts FT. Mapping the distribution of zero-dose children to assess the performance of vaccine delivery strategies and their relationships with measles incidence in Nigeria. Vaccine. 2022, corrected proof. doi:10.1016/j.vaccine.2022.11.026. [Utazi et al., 2022]"
+    },
+    {
+      "section": "References",
+      "fn": "source",
+      "text": "Masresha BG, Weldegebriel GG, Lebo EJ, Wanyoike S, Bwaka AM, Vuo-Masembe Y. Insights from 25 years of measles and measles-rubella vaccination campaigns in the WHO African Region (2001-2025). Vaccines. 2026;14(6):549. doi:10.3390/vaccines14060549. [Masresha et al., 2026]"
+    },
+    {
+      "section": "References",
+      "fn": "source",
+      "text": "National Population Commission (NPC) [Nigeria] and ICF. Nigeria Demographic and Health Survey 2018. Abuja, Nigeria, and Rockville, Maryland, USA: NPC and ICF; 2019. [NPC and ICF, 2019]"
+    },
+    {
+      "section": "References",
+      "fn": "method",
+      "text": "Croft TN, Allen CK, Zachary BW, et al. Guide to DHS Statistics. Rockville, Maryland, USA: ICF; 2023. [Croft et al., 2023]"
+    },
+    {
+      "section": "References",
+      "fn": "source",
+      "text": "World Health Organization. Measles and rubella supplementary immunization activities, Nigeria (V_SIA_MAIN_MR). Immunization Data portal; accessed 2 November 2026. Figures reported by Nigeria. https://immunizationdata.who.int/. These records are cited and are not held in this repository."
+    }
+  ]
+}
